@@ -1,7 +1,7 @@
 <?php
 require dirname(__FILE__) . '/conf.php';
 if(!is_dir(XHPROF_DATA_DIR)) {
-    echo XHPROF_DATA_DIR . " has not been set to a valid directory";
+    echo "XHPROF_DATA_DIR in conf.php has not been set to a valid directory";
     exit(1);
 }
 ?>
