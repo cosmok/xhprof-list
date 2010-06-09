@@ -19,6 +19,9 @@ if(!is_dir(XHPROF_DATA_DIR)) {
                 margin-left: auto ;
                 margin-right: auto ;
             }
+            table#list tbody tr.row_selected td {
+                background-color:#FFF380;
+            }
     </style>
     <script type="text/javascript" src="media/js/jquery.js"></script>
     <script type="text/javascript" src="media/js/jquery.dataTables.min.js"></script>
@@ -95,6 +98,12 @@ $(document).ready(function(){
                     "bStateSave": true,
                     "iDisplayLength": 25
                 });
+    $('#list tr').click( function() {
+        if ( $(this).hasClass('row_selected') )
+            $(this).removeClass('row_selected');
+        else
+            $(this).addClass('row_selected');
+    } );
 
 });
 </script>
