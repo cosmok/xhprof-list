@@ -1,7 +1,7 @@
 XHProf List
 
 How to use?
-1. Drop the files into a directory that is accessible from say, URL1.
+1. Drop the files into a directory that is accessible from the browser say, URL1.
 2. In the conf.php file set:
    XHPROF_DATA_DIR to the directory containing the XHProf output
    XHPROF_URL to the base URL that is used for viewing XHProf output
